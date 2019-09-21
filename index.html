@@ -1,0 +1,74 @@
+<!-- html for cryltal homework -->
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Crystal Game </title>
+    <!-- link css style sheet,javaS & jquery -->
+    <a href="assets/css/style" rel="stylesheet" type="text/css"></a>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="myheader">
+        <h2>Crystal Collector game! - play if you dare!</h2>
+        <div id="content">
+            <!-- rules of game div block -->
+            <p>You will be giving a random number at the start of the game. </p>
+            <p>There are four crystal below. By clicking on a crystal you will add a specific amount of points to your
+                total score </p>
+            <p> You win the game by matching your total score to random number, you lose the game if your total score
+                goes above the random number. </p>
+            <p> The Value of each crystal is hidden from you until you click on it. </p>
+            <p> Each time the game starts, the game will change the values of each crystal. </p>
+        </div>
+
+    </div>
+
+    <div>
+        <!-- blackjack / green box-->
+        <div id="score">
+            <div id="randomNumber"><span>goal </span> 
+                <div id="winloss">
+                    <p id="win">Win</p>
+                    <p id="loss">Loss </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="gems">
+        <!-- crystals go here w/ active buttons event listeners -->
+        <div>
+             <button id="gem1" class="crystal">Crystal 1</button>
+        </div>
+        <div>
+            <button id="gem2" class="crystal">Crystal 2</button>
+        </div>
+        <div>
+            <button id="gem3" class="crystal">Crystal 3</button>
+        </div>
+        <div>
+            <button id="gem4" class="crystal">Crystal 4 </button>
+        </div>
+    </div>
+
+    <div class="totalScore">
+        <!-- blue box -->
+        <p class="userScore"> </p>
+    </div>
+
+    <script src="assets/javascript.js">
+
+
+    </script>
+</body>
+
+
+
+</html>
