@@ -31,9 +31,10 @@ console.log(hitbox + " hit ");
 // game logic that works - sort of  ****  dont edit... 
 $(".crystal").on("click", function () {
     var valueClicked = parseInt($(this).attr("value"))
+    console.log(valueClicked)
     console.log(valueClicked + hitbox);
-    $("#userScore").append(valueClicked + hitbox);
     hitbox = valueClicked + hitbox;
+    $("#userScore").text(hitbox);
    
 
     if (hitbox === blackjack) {
@@ -103,7 +104,7 @@ function startGame() {
 
 
     console.log("blackjack score" + blackjack);
-    $("#randomNumber").append(blackjack);
+    $("#randomNumber").text(blackjack);
     //   $("#userScore").html(hitbox);
 
     //   hitbox ;
